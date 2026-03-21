@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { BrowserRouter, Router, Route } from 'react-router-dom'
+import homePage from './pages/homePage'
+import chiSiamo from './pages/chiSiamo'
+import Prodotti from './pages/Prodotti'
 
 function App() {
   
