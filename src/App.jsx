@@ -1,23 +1,20 @@
-import { useState } from 'react'
-import { useEffect } from 'react'
-import { BrowserRouter, Router, Route } from 'react-router-dom'
-import homePage from './pages/homePage'
-import chiSiamo from './pages/chiSiamo'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import ChiSiamo from './pages/ChiSiamo'
 import Prodotti from './pages/Prodotti'
 
 function App() {
   
 
   return (
-    <>
      <BrowserRouter>
-     <Router>
-      <Route path='/' element={<homePage/>}></Route>
-      <Route path='/chisiamo' element={<chiSiamo/>}></Route>
-      <Route path='/prodotti' element={<Prodotti/>}></Route>
-     </Router>
+     <Routes>
+      <Route path="/" element={<HomePage/>} />
+      <Route path="/chiSiamo" element={<ChiSiamo/>} />
+      <Route path="/prodotti" element={<Prodotti/>} />
+     </Routes>
      </BrowserRouter>
-    </>
   )
 }
 
