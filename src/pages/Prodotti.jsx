@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
-import { data } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function Prodotti(){
     const linkApi ="https://fakestoreapi.com/products"
@@ -29,6 +29,7 @@ export default function Prodotti(){
                          <h4 className="card-text">{prodotto.price}$</h4>
                          <p className="card-text">{prodotto.description}</p>
                          <h5 className="card-text">{prodotto.category}</h5>
+                         <p><Link to="/prodotti/id">Clicca per più info</Link></p>
                         </div>
                     </div>
                 </div>
