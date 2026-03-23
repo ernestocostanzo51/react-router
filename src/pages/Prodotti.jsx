@@ -27,9 +27,8 @@ export default function Prodotti(){
                          <div className="card-body">
                          <h5 className="card-title">{prodotto.title}</h5>
                          <h4 className="card-text">{prodotto.price}$</h4>
-                         <p className="card-text">{prodotto.description}</p>
                          <h5 className="card-text">{prodotto.category}</h5>
-                         <p><Link to="/prodotti/id">Clicca per più info</Link></p>
+                         <p><Link to={`/prodotti/${prodotto.id}`}>Clicca per più info</Link></p>
                         </div>
                     </div>
                 </div>
